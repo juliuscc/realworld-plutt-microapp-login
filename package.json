@@ -1,13 +1,14 @@
 {
   "name": "login",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "main": "build/proxy/react.js",
   "scripts": {
-    "build": "plutt build",
-    "serve": "plutt serve build/login -p 5002"
+    "build": "plutt build/login",
+    "start": "plutt serve build -p $PORT",
+    "postinstall": "plutt build"
   },
   "dependencies": {
-    "@digitalroute/plutt": "^2.0.0-beta.5",
+    "@digitalroute/plutt": "^2.0.0-beta.6",
     "isomorphic-unfetch": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -15,6 +16,6 @@
     "swr": "^0.2.0"
   },
   "plutt": {
-    "hostPath": "http://localhost:5002"
+    "hostPath": "https://realworld-plutt-microapp-login.herokuapp.com"
   }
 }
