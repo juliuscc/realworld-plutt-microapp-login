@@ -1,0 +1,20 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "main": "build/proxy/react.js",
+  "scripts": {
+    "build": "plutt build",
+    "serve": "plutt serve build -p 5002"
+  },
+  "dependencies": {
+    "@digitalroute/plutt": "^2.0.0-beta.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "serve": "^11.3.0",
+    "swr": "^0.2.0"
+  },
+  "plutt": {
+    "hostPath": "http://localhost:5002"
+  }
+}
